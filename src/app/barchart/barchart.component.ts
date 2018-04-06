@@ -21,7 +21,9 @@ export class BarchartComponent implements OnInit {
           "caption": "Harry's SuperMart",
           "subCaption": "Top 5 stores in last month by revenue",
           "numberprefix": "R",
-          "theme": "fint"
+          "theme": "zune",
+          "exportEnabled": "1",
+          "exportMode": "client",
       },
       "data": [
           {

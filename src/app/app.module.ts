@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import * as FusionCharts from 'fusioncharts';
 import * as Charts from 'fusioncharts/fusioncharts.charts';
@@ -12,6 +13,7 @@ import { AppComponent } from './app.component';
 import { Piechart3dComponent } from './piechart3d/piechart3d.component';
 import { BarchartComponent } from './barchart/barchart.component';
 import { AreaandlinechartComponent } from './areaandlinechart/areaandlinechart.component';
+import { RuntimechartComponent } from './runtimechart/runtimechart.component';
 
 FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
 
@@ -21,12 +23,14 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     AppComponent,
     Piechart3dComponent,
     BarchartComponent,
-    AreaandlinechartComponent
+    AreaandlinechartComponent,
+    RuntimechartComponent
   ],
   imports: [
     BrowserModule,
     FusionChartsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

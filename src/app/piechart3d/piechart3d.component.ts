@@ -26,7 +26,9 @@ export class Piechart3dComponent implements OnInit {
           "showpercentvalues": "1",
           "showpercentintooltip": "0",
           "plottooltext": "Age group : $label Total visit : $datavalue",
-          "theme": "ocean"
+          "theme": "ocean",
+          "exportEnabled": "1",
+          "exportMode": "client",
       },
       "data": [
           {

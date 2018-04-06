@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { BarchartComponent } from './barchart/barchart.component';
 import { Piechart3dComponent } from './piechart3d/piechart3d.component';
 import { AreaandlinechartComponent } from './areaandlinechart/areaandlinechart.component';
+import { RuntimechartComponent } from './runtimechart/runtimechart.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -16,6 +18,10 @@ const routes: Routes = [
   {
     path: 'areaandline',
     component: AreaandlinechartComponent
+  },
+  {
+    path: 'dynamic',
+    component: RuntimechartComponent
   }
 ];
 
