@@ -19,6 +19,8 @@ import { BarchartComponent } from './barchart/barchart.component';
 import { AreaandlinechartComponent } from './areaandlinechart/areaandlinechart.component';
 import { RuntimechartComponent } from './runtimechart/runtimechart.component';
 import { MapchartComponent } from './mapchart/mapchart.component';
+import { RequestsbypropertytypeComponent } from './requestsbypropertytype/requestsbypropertytype.component';
+import { RequestsbyremovaltypeComponent } from './requestsbyremovaltype/requestsbyremovaltype.component';
 
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionMaps, USAMap,SAMap, FintTheme, OceanTheme);
 
@@ -30,7 +32,9 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FusionMaps, USAMap,SAMap, FintTh
     BarchartComponent,
     AreaandlinechartComponent,
     RuntimechartComponent,
-    MapchartComponent
+    MapchartComponent,
+    RequestsbypropertytypeComponent,
+    RequestsbyremovaltypeComponent
   ],
   imports: [
     BrowserModule,

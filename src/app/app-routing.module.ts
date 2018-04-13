@@ -6,7 +6,8 @@ import { Piechart3dComponent } from './piechart3d/piechart3d.component';
 import { AreaandlinechartComponent } from './areaandlinechart/areaandlinechart.component';
 import { RuntimechartComponent } from './runtimechart/runtimechart.component';
 import { MapchartComponent } from './mapchart/mapchart.component';
-
+import { RequestsbypropertytypeComponent } from './requestsbypropertytype/requestsbypropertytype.component';
+import { RequestsbyremovaltypeComponent } from './requestsbyremovaltype/requestsbyremovaltype.component';
 const routes: Routes = [
   {
     path: '',
@@ -27,6 +28,14 @@ const routes: Routes = [
   {
     path: 'map',
     component: MapchartComponent
+  },
+  {
+    path: 'requestsbypropertytype',
+    component: RequestsbypropertytypeComponent
+  },
+  {
+    path: 'requestsbyremovaltype',
+    component: RequestsbyremovaltypeComponent
   }
 ];
 

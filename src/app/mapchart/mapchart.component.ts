@@ -281,9 +281,48 @@ export class MapchartComponent implements OnInit {
               }
           ]
       },
-      "data": [
-          {"id":"05","value":138},{"id":"03","value":1068},{"id":"06","value":3563},{"id":"02","value":376},{"id":"09","value":691},{"id":"07","value":1773},{"id":"10","value":3430},{"id":"08","value":1948},{"id":"11","value":1225}
-      ]
+      
+    "entityDef": [
+      {
+        "internalId": "05",
+        "newId": "Eastern Cape"
+    }, {
+        "internalId": "03",
+        "newId": "Free State"
+    }, {
+        "internalId": "06",
+        "newId": "Gauteng"
+    }, {
+        "internalId": "02",
+        "newId": "KwaZulu-Natal"
+    }, {
+        "internalId": "09",
+        "newId": "Limpopo"
+    }, {
+        "internalId": "07",
+        "newId": "Mpumalanga"
+    }, {
+        "internalId": "10",
+        "newId": "North West"
+    }, {
+        "internalId": "08",
+        "newId": "Northern Cape"
+    }, {
+        "internalId": "11",
+        "newId": "Western Cape"			
+    }
+    ],
+    "data": [
+      {"id":"Eastern Cape","value":138},
+      {"id":"Free State","value":1068},
+      {"id":"Gauteng","value":3563},
+      {"id":"KwaZulu-Natal","value":376},
+      {"id":"Limpopo","value":691},
+      {"id":"Mpumalanga","value":1773},
+      {"id":"North West","value":3430},
+      {"id":"Northern Cape","value":1948},
+      {"id":"Western Cape","value":1225}
+    ]
   }; 
 /* this.dataSource =
   {
