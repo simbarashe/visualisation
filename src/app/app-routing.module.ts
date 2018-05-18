@@ -8,6 +8,8 @@ import { RuntimechartComponent } from './runtimechart/runtimechart.component';
 import { MapchartComponent } from './mapchart/mapchart.component';
 import { RequestsbypropertytypeComponent } from './requestsbypropertytype/requestsbypropertytype.component';
 import { RequestsbyremovaltypeComponent } from './requestsbyremovaltype/requestsbyremovaltype.component';
+import { ProvincerequestsbyremovaltypeComponent } from './provincerequestsbyremovaltype/provincerequestsbyremovaltype.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -36,6 +38,10 @@ const routes: Routes = [
   {
     path: 'requestsbyremovaltype',
     component: RequestsbyremovaltypeComponent
+  },
+  {
+    path: 'provincialrequestsbyremovaltype',
+    component: ProvincerequestsbyremovaltypeComponent
   }
 ];
 

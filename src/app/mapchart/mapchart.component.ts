@@ -260,27 +260,33 @@ export class MapchartComponent implements OnInit {
           "numberScaleValue": "1,1000,1000",
           "numberScaleUnit": "K,M",
           "numberPrefix": "$",
-          "showLabels": "1",
+          "showLabels": "0",
           "theme": "ocean"
-      },
-      "colorrange": {
-          "minvalue": "0",
-          "startlabel": "Low",
-          "endlabel": "High",
-          "code": "#e44a00",
-          "gradient": "1",
-          "color": [
-              {
-                  "maxvalue": "1500",
-                  "displayvalue": "Average",
-                  "code": "#f8bd19"
-              },
-              {
-                  "maxvalue": "10000",
-                  "code": "#6baa01"
-              }
-          ]
-      },
+      }
+      ,
+        "colorrange": {
+            "color": [{
+                "minvalue": "0",
+                "maxvalue": "100",
+                "code": "#D0DFA3",
+                "displayValue": "< 100"
+            }, {
+                "minvalue": "100",
+                "maxvalue": "300",
+                "code": "#13F286",
+                "displayValue": "100-300"
+            }, {
+                "minvalue": "300",
+                "maxvalue": "500",
+                "code": "#097813",
+                "displayValue": "300-500"
+            }, {
+                "minvalue": "500",
+                "maxvalue": "100000",
+                "code": "#006341",
+                "displayValue": "> 500"
+            }]
+        },
       
     "entityDef": [
       {

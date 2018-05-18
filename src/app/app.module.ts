@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import * as FusionCharts from 'fusioncharts';
 import * as Charts from 'fusioncharts/fusioncharts.charts';
 import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
+import * as PowerCharts from 'fusioncharts/fusioncharts.powercharts';
 import * as USAMap from 'fusioncharts/maps/fusioncharts.usa';
 import * as SAMap from 'fusioncharts/maps/fusioncharts.southafrica';
 import * as OceanTheme from 'fusioncharts/themes/fusioncharts.theme.ocean';
@@ -21,8 +22,9 @@ import { RuntimechartComponent } from './runtimechart/runtimechart.component';
 import { MapchartComponent } from './mapchart/mapchart.component';
 import { RequestsbypropertytypeComponent } from './requestsbypropertytype/requestsbypropertytype.component';
 import { RequestsbyremovaltypeComponent } from './requestsbyremovaltype/requestsbyremovaltype.component';
+import { ProvincerequestsbyremovaltypeComponent } from './provincerequestsbyremovaltype/provincerequestsbyremovaltype.component';
 
-FusionChartsModule.fcRoot(FusionCharts, Charts, FusionMaps, USAMap,SAMap, FintTheme, OceanTheme);
+FusionChartsModule.fcRoot(FusionCharts, Charts, FusionMaps, USAMap,SAMap, FintTheme, OceanTheme,PowerCharts);
 
 
 @NgModule({
@@ -34,10 +36,11 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FusionMaps, USAMap,SAMap, FintTh
     RuntimechartComponent,
     MapchartComponent,
     RequestsbypropertytypeComponent,
-    RequestsbyremovaltypeComponent
+    RequestsbyremovaltypeComponent,
+    ProvincerequestsbyremovaltypeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'visualisation'}),
     FusionChartsModule,
     AppRoutingModule,
     FormsModule

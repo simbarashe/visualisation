@@ -25,7 +25,7 @@ export class Piechart3dComponent implements OnInit {
           "slicingdistance": "15",
           "showpercentvalues": "1",
           "showpercentintooltip": "0",
-          "plottooltext": "Age group : $label Total visit : $datavalue",
+          "plottooltext": "Age group : $label Total visit : $datavalue ($percentvalues)",
           "theme": "ocean",
           "exportEnabled": "1",
           "exportMode": "client",
